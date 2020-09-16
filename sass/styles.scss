@@ -1,13 +1,13 @@
 /* Colores */
 @import 'colors';
-/* Fin Colores */
+
 /* Fuentes */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
-/* Fin Fuentes */
+
 /* General */
 * {
     scroll-behavior: smooth;
@@ -34,7 +34,7 @@ body {
         color: $secondary;
     }
 }
-/* Fin General */
+
 /* Menú */
 .navbar {
     background-color: $secondary;
@@ -120,10 +120,10 @@ body {
         }
     }
 }
-/* Fin Menú */
+
 /* Banner */
 .banner {
-    background-image: url(banner.jpg);
+    background-image: url(../img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -148,7 +148,7 @@ body {
         font-size: 2rem;
     }
 }
-/* Fin Banner */
+
 /* Secciones */
 .section {
     padding: 3em 0;
@@ -175,7 +175,7 @@ body {
 .bg-d {
     background: $dbackground;
 }
-/* Fin Secciones */
+
 /* Productos Destacados */
 .carousel {
     display: flex;
@@ -200,7 +200,7 @@ body {
         }
     }
 }
-/* Fin Productos Destacados */
+
 /* Otros */
 .cherry-mix {
     position: relative;
@@ -475,7 +475,7 @@ body {
         z-index: 4;
     }
 }
-/* Fin Otros */
+
 /* Conocenos */
 .established p {
     font-size: 0.7rem;
@@ -486,7 +486,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
 }
-/* Fin Conocenos */
+
 /* Novedades / Formularios */
 form {
     .form-group {
@@ -496,7 +496,7 @@ form {
         }
     }
 }
-/* Fin Novedades / Formularios */
+
 /* Footer */
 .footer-divider {
     .divider-social-icon {
@@ -531,7 +531,7 @@ form {
         color: $primary;
     }
 }
-/* Fin Footer */
+
 /* Botón Subir */
 .topBtn {
     position: fixed;
@@ -552,7 +552,7 @@ form {
         outline: none;
     }
 }
-/* Fin Botón Subir */
+
 /* Botón WhatsApp */
 .whatsapp-button {
     position: fixed;
@@ -576,7 +576,7 @@ form {
         height: 32px;
     }
 }
-/* Fin Botón WhatsApp */
+
 /* Productos */
 .productos {
     position: relative;
@@ -611,6 +611,12 @@ form {
             margin: 0;
             font-size: 1.4rem;
         }
+        .descripcion-producto {
+            background-color: $dbackground;
+            p {
+                margin-bottom: 0;
+            }
+        }
         .precio-producto {
             background-color: $dbackground;
             h5 {
@@ -632,7 +638,7 @@ form {
         width: 20vh;
     }
 }
-/* Fin Productos */
+
 /* Contacto */
 .contacto {
     position: relative;
@@ -656,27 +662,27 @@ form {
         }
     }
 }
-/* Fin Contacto */
+
 /* Nosotras */
 .foto-tami {
     background-size: cover;
     background-position: center center;
-    background-image: url(nosotras-tami.jpg);
+    background-image: url(../img/nosotras/nosotras-tami.jpg);
     height: 50rem;
 }
 .foto-vero {
     background-size: cover;
     background-position: center center;
-    background-image: url(nosotras-vero.jpg);
+    background-image: url(../img/nosotras/nosotras-vero.jpg);
     height: 50rem;
 }
 .foto-nosotras {
     background-size: cover;
     background-position: center center;
-    background-image: url(nosotras.jpg);
+    background-image: url(../img/nosotras/nosotras.jpg);
     height: 40rem;
 }
-/* Fin Nosotras */
+
 /* bootstrap hack: fix content width inside hidden tabs */
 .tab-content > .tab-pane, .pill-content > .pill-pane {
     display: block;    /* undo display:none          */
@@ -686,7 +692,7 @@ form {
 .tab-content > .active, .pill-content > .active {
     height: auto;      /* let the content decide it  */
 }
-/* bootstrap hack end */
+
 /* Media Queries */
 @media only screen and (min-width: 768px ) {
     .banner h1 {
@@ -696,6 +702,9 @@ form {
         .product-grid {
             h4 {
                 font-size: 0.9rem;
+            }
+            .descripcion-producto {
+                font-size: 0.8rem;
             }
             .precio-producto {
                 background-color: $dbackground;
@@ -719,6 +728,9 @@ form {
         .product-grid {
             h4 {
                 font-size: 1.2rem;
+            }
+            .descripcion-producto {
+                font-size: 1.1rem;
             }
             .precio-producto {
                 background-color: $dbackground;
@@ -830,4 +842,3 @@ form {
         }
     }
 }
-/* Fin Media Queries */

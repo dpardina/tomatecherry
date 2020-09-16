@@ -1,13 +1,11 @@
 @charset "UTF-8";
 /* Colores */
-/* Fin Colores */
 /* Fuentes */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Kulim+Park&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Stalemate&display=swap");
-/* Fin Fuentes */
 /* General */
 * {
   scroll-behavior: smooth;
@@ -38,7 +36,6 @@ body {
   color: #FFF;
 }
 
-/* Fin General */
 /* Menú */
 .navbar {
   background-color: #FFF;
@@ -123,10 +120,9 @@ body {
   transition: 0.5s;
 }
 
-/* Fin Menú */
 /* Banner */
 .banner {
-  background-image: url(banner.jpg);
+  background-image: url(../img/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -152,7 +148,6 @@ body {
   font-size: 2rem;
 }
 
-/* Fin Banner */
 /* Secciones */
 .section {
   padding: 3em 0;
@@ -181,7 +176,6 @@ body {
   background: #EEE;
 }
 
-/* Fin Secciones */
 /* Productos Destacados */
 .carousel {
   display: flex;
@@ -207,7 +201,6 @@ body {
   margin-bottom: 0;
 }
 
-/* Fin Productos Destacados */
 /* Otros */
 .cherry-mix {
   position: relative;
@@ -486,7 +479,6 @@ body {
   z-index: 4;
 }
 
-/* Fin Otros */
 /* Conocenos */
 .established p {
   font-size: 0.7rem;
@@ -499,14 +491,12 @@ body {
   font-size: 1.4rem;
 }
 
-/* Fin Conocenos */
 /* Novedades / Formularios */
 form .form-group .form-control {
   border-radius: 0;
   border: 0.01rem solid #000;
 }
 
-/* Fin Novedades / Formularios */
 /* Footer */
 .footer-divider .divider-social-icon {
   font-size: 1.2rem;
@@ -540,7 +530,6 @@ form .form-group .form-control {
   color: #000;
 }
 
-/* Fin Footer */
 /* Botón Subir */
 .topBtn {
   position: fixed;
@@ -548,7 +537,9 @@ form .form-group .form-control {
   right: 1.5rem;
   font-size: 0.8rem;
   width: 2rem;
+  min-width: 2rem;
   height: 2rem;
+  min-height: 2rem;
   background: #3D2235;
   color: #FFF;
   border: none;
@@ -560,7 +551,6 @@ form .form-group .form-control {
   outline: none;
 }
 
-/* Fin Botón Subir */
 /* Botón WhatsApp */
 .whatsapp-button {
   position: fixed;
@@ -585,7 +575,6 @@ form .form-group .form-control {
   height: 32px;
 }
 
-/* Fin Botón WhatsApp */
 /* Productos */
 .productos {
   position: relative;
@@ -622,6 +611,12 @@ form .form-group .form-control {
   margin: 0;
   font-size: 1.4rem;
 }
+.productos .product-grid .descripcion-producto {
+  background-color: #EEE;
+}
+.productos .product-grid .descripcion-producto p {
+  margin-bottom: 0;
+}
 .productos .product-grid .precio-producto {
   background-color: #EEE;
 }
@@ -642,7 +637,6 @@ form .form-group .form-control {
   width: 20vh;
 }
 
-/* Fin Productos */
 /* Contacto */
 .contacto {
   position: relative;
@@ -667,30 +661,28 @@ form .form-group .form-control {
   padding: 0 0.3rem;
 }
 
-/* Fin Contacto */
 /* Nosotras */
 .foto-tami {
   background-size: cover;
   background-position: center center;
-  background-image: url(nosotras-tami.jpg);
+  background-image: url(../img/nosotras/nosotras-tami.jpg);
   height: 50rem;
 }
 
 .foto-vero {
   background-size: cover;
   background-position: center center;
-  background-image: url(nosotras-vero.jpg);
+  background-image: url(../img/nosotras/nosotras-vero.jpg);
   height: 50rem;
 }
 
 .foto-nosotras {
   background-size: cover;
   background-position: center center;
-  background-image: url(nosotras.jpg);
+  background-image: url(../img/nosotras/nosotras.jpg);
   height: 40rem;
 }
 
-/* Fin Nosotras */
 /* bootstrap hack: fix content width inside hidden tabs */
 .tab-content > .tab-pane, .pill-content > .pill-pane {
   display: block;
@@ -706,7 +698,6 @@ form .form-group .form-control {
   /* let the content decide it  */
 }
 
-/* bootstrap hack end */
 /* Media Queries */
 @media only screen and (min-width: 768px) {
   .banner h1 {
@@ -715,6 +706,9 @@ form .form-group .form-control {
 
   .productos .product-grid h4 {
     font-size: 0.9rem;
+  }
+  .productos .product-grid .descripcion-producto {
+    font-size: 0.8rem;
   }
   .productos .product-grid .precio-producto {
     background-color: #EEE;
@@ -735,6 +729,9 @@ form .form-group .form-control {
 
   .productos .product-grid h4 {
     font-size: 1.2rem;
+  }
+  .productos .product-grid .descripcion-producto {
+    font-size: 1.1rem;
   }
   .productos .product-grid .precio-producto {
     background-color: #EEE;
@@ -826,6 +823,5 @@ form .form-group .form-control {
     font-size: 1rem;
   }
 }
-/* Fin Media Queries */
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles2-1.css.map */
