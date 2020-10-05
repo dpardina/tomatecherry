@@ -35,6 +35,19 @@ body {
     }
 }
 
+/* Barra de Notificación */
+.notificacion {
+    background-color: $darkerdetails;
+    padding: 0.5rem 0;
+    margin: 0;
+    a {
+        color: $secondary;
+        p {
+            margin: 0;
+        }
+    }
+}
+
 /* Menú */
 .navbar {
     background-color: $secondary;
@@ -119,6 +132,9 @@ body {
             }
         }
     }
+}
+.navbar-home {
+    margin-top: 2.5rem;
 }
 
 /* Banner */
