@@ -37,6 +37,22 @@ body {
 }
 
 /* Barra de Notificación */
+.notificacion {
+  background-color: #3D2235;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.notificacion a {
+  color: #FFF;
+}
+.notificacion a p {
+  margin: 0;
+}
+
+.navbar-home {
+  margin-top: 2.5rem;
+}
+
 /* Menú */
 .navbar {
   background-color: #FFF;
